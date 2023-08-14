@@ -6,7 +6,7 @@ import { Select } from 'antd';
 import axios from "axios";
 import 'antd/dist/antd.css';
 // const { useState } = React;
-var varbase_url = "http://192.168.1.187:5015"
+var varbase_url = "http://10.129.2.209:5066"
 const { Option } = Select;
 const Api = () => {
 
@@ -29,7 +29,7 @@ const Api = () => {
       if (res.status === 200) {
         message.success(res);
         values.barcode = "e"
-        SetBar(res.data.barcode)
+        SetBar(res.data.barcode['product_code'])
 
       } else {
         SetBar("Please choose valid logic")
@@ -102,6 +102,16 @@ const Api = () => {
           <Option value="4">
             KD
           </Option>
+          <Option value="5">
+            SILA
+          </Option>
+          <Option value="6">
+            BERGENER
+          </Option>
+          <Option value="7">
+            BOX
+          </Option>
+
 
         </Select>
       </Form.Item>

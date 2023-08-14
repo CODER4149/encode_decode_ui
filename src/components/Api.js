@@ -8,7 +8,7 @@ import 'antd/dist/antd.css';
 import config_path from "../App"
 import URL from "../App"
 // const { useState } = React;
-var varbase_url = "http://192.168.1.187:5015"
+var varbase_url = "http://10.129.2.209:5066"
 const { Option } = Select;
 const Api2 = () => {
 
@@ -118,6 +118,15 @@ const Api2 = () => {
           </Option>
           <Option value="4">
             Kohinoor
+          </Option>
+          <Option value="5">
+            SILA
+          </Option>
+          <Option value="6">
+            BERGENER
+          </Option>
+          <Option value="7">
+            BOX
           </Option>
 
         </Select>
